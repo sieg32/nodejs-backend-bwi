@@ -13,7 +13,7 @@ async function authenticate(req,res,next){
       
       next();
     }else{
-      res.status(501).send('permission denied')
+      res.status(401).send('unauthorized')
     }
 
 }
